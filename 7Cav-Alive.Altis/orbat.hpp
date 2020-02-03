@@ -465,4 +465,3 @@ class CfgOrbat
 		assets[] = {};
     };
 };
-};

@@ -49,6 +49,7 @@ setDate _date;
 // Alive initialization
 [] execVM "alive\CustomFactions.sqf";
 [] execVM "alive\Tasks.sqf";
+[] execVM "script\missionEnd\var_init.sqf";
 
 enableEnvironment [false, true];
 

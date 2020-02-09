@@ -410,7 +410,7 @@ class CfgOrbat
 		idType = 3;    // Unit ID type
 		side = "East"; // Unit side from CfgChainOfCommand >> Sides
 		size = "Battalion"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
-		type = "Airborne"; // Unit type from CfgChainOfCommand >> Types
+		type = "Fighter"; // Unit type from CfgChainOfCommand >> Types
 		commander = "Visili"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
 		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
 		tags[] = {OPF_air}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
@@ -440,7 +440,7 @@ class CfgOrbat
 		idType = 3;    // Unit ID type
 		side = "East"; // Unit side from CfgChainOfCommand >> Sides
 		size = "Battalion"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
-		type = "Mechanized"; // Unit type from CfgChainOfCommand >> Types
+		type = "Cavalry"; // Unit type from CfgChainOfCommand >> Types
 		commander = "Alexei"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
 		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
 		tags[] = {OPF_mech}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
@@ -455,7 +455,7 @@ class CfgOrbat
 		idType = 3;    // Unit ID type
 		side = "East"; // Unit side from CfgChainOfCommand >> Sides
 		size = "Battalion"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
-		type = "Special Forces"; // Unit type from CfgChainOfCommand >> Types
+		type = "Recon"; // Unit type from CfgChainOfCommand >> Types
 		commander = "Anatolii"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
 		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
 		tags[] = {OPF_specop}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.

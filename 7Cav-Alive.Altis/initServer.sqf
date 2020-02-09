@@ -1,7 +1,9 @@
 diag_log "initServer start";
+#include "\serverscripts\zeusserverscripts\secretKey.sqf" //Includes the zeus security key.sqf so we can reference it for zeus IDs
+#include "scripts\server\deleteWeaponHolder.sqf" //Includes the deleteWeaponHolder script so everything can reference it 
+missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true]; //variable init for loyalty cipher
+missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionEnd scripts located in scripts/missionEnd
 
-#include "\serverscripts\zeusserverscripts\secretKey.sqf"
-missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true];
 
 // _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
 
@@ -49,7 +51,6 @@ setDate _date;
 // Alive initialization
 [] execVM "alive\CustomFactions.sqf";
 [] execVM "alive\Tasks.sqf";
-[] execVM "script\missionEnd\var_init.sqf";
 
 enableEnvironment [false, true];
 

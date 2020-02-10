@@ -1,5 +1,3 @@
-//Set a variable in the missionNameSpace to EndMissionNumber and set boxNumber equal to it.
-//We do this so that, if a previous 
 private _boxNumber = missionNameSpace getVariable "endMissionNumber";
 private _term = Term3;
 removeAllActions _term;
@@ -8,7 +6,7 @@ removeAllActions _term;
 
 //Create task
 private _title = "Defend The Satellite!";
-private _description = "Activate the sattellite array to destroy the armor commander!";
+private _description = "Activate the satellite array to destroy the armor commander!";
 private _waypoint = "_term";
 private _endMission = [BLUFOR, "Defend The Satellite!", [_description, _title, _waypoint], Term1, true] call BIS_fnc_taskCreate; //create the task (google it, it's under taskTutorial)
 "Defend The Satellite!" call BIS_fnc_taskSetCurrent; //set as the current task
@@ -53,6 +51,7 @@ for "_i" from 1 to 20 do {
 [_term,2] call bis_fnc_dataTerminalAnimate; //keyframe 2
 sleep 20;
 
+_boxNumber = _boxNumber + 1;
 
 [ missionConfigFile >> "CfgORBAT" >> "mech" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay; sleep 5; //kll that orbat commander
 

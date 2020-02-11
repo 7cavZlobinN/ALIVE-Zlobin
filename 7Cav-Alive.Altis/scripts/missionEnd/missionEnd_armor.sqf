@@ -5,10 +5,7 @@ removeAllActions _term;
 
 
 //Create task
-private _title = "Defend The Satellite!";
-private _description = "Activate the satellite array to destroy the armor commander!";
-private _waypoint = "_term";
-private _endMission = [BLUFOR, "Defend The Satellite!", [_description, _title, _waypoint], Term1, true] call BIS_fnc_taskCreate; //create the task (google it, it's under taskTutorial)
+private _endMission = [BLUFOR, "Defend The Satellite!", ["Activate the satellite array to destroy the armor commander!", "Defend The Satellite!", "_term"], Term1, true] call BIS_fnc_taskCreate; //create the task (google it, it's under taskTutorial)
 "Defend The Satellite!" call BIS_fnc_taskSetCurrent; //set as the current task
 ["Defend The Satellite!", "Defend"] call BIS_fnc_taskSetType; //set the task type
 
@@ -49,7 +46,7 @@ for "_i" from 1 to 20 do {
   sleep .01
 };
 [_term,2] call bis_fnc_dataTerminalAnimate; //keyframe 2
-sleep 20;
+sleep 30;
 
 _boxNumber = _boxNumber + 1;
 

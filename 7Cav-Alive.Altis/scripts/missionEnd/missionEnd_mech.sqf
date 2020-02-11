@@ -5,10 +5,7 @@ removeAllActions _term;
 
 
 //Create task
-private _title = "Defend The Satellite!";
-private _description = "Activate the satellite array to destroy the armor commander!";
-private _waypoint = "_term";
-private _endMission = [BLUFOR, "Defend The Satellite!", [_description, _title, _waypoint], Term1, true] call BIS_fnc_taskCreate; //create the task (google it, it's under taskTutorial)
+private _endMission = [BLUFOR, "Defend The Satellite!", ["Activate the satellite array to destroy the armor commander!", "Defend The Satellite!", "_term"], Term1, true] call BIS_fnc_taskCreate; //create the task (google it, it's under taskTutorial)
 "Defend The Satellite!" call BIS_fnc_taskSetCurrent; //set as the current task
 ["Defend The Satellite!", "Defend"] call BIS_fnc_taskSetType; //set the task type
 
@@ -17,9 +14,8 @@ titleText ["<t color='#ff0000' size='2'>Defend the satellite!</t>", "PLAIN DOWN"
 
 
 ["LeadTrack01_F",0,1] call BIS_fnc_playMusic;//Play some music that lasts a while
-/*
- *Unit Creation
- */
+
+
 for "_i" from 1 to 20 do {
   private _group = createGroup east; 
 //group createUnit [type, position, markers, placement, special]
@@ -49,12 +45,12 @@ for "_i" from 1 to 20 do {
   sleep .01
 };
 [_term,2] call bis_fnc_dataTerminalAnimate; //keyframe 2
-sleep 20;
+sleep 30;
+
 
 _boxNumber = _boxNumber + 1;
 
 [ missionConfigFile >> "CfgORBAT" >> "mech" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay; sleep 5; //kll that orbat commander
-
 
 [_term,3] call BIS_fnc_DataTerminalAnimate;//keyframe 3
 ["Defend The Satellite!", "SUCCEEDED"] call BIS_fnc_taskSetState; sleep 30; //Change the task state to succeeded

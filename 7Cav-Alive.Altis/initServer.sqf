@@ -1,7 +1,4 @@
 diag_log "initServer start";
-missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true]; //variable init for loyalty cipher
-missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionEnd scripts located in scripts/missionEnd
-
 
 // _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
 

@@ -3,18 +3,13 @@ private _term = Term3;
 removeAllActions _term;
 [_term,1] call BIS_fnc_DataTerminalAnimate; //keyframe 1 
 
-
 //Create task
 private _endMission = [BLUFOR, "Defend The Satellite!", ["Activate the satellite array to destroy the armor commander!", "Defend The Satellite!", "_term"], Term1, true] call BIS_fnc_taskCreate; //create the task (google it, it's under taskTutorial)
 "Defend The Satellite!" call BIS_fnc_taskSetCurrent; //set as the current task
 ["Defend The Satellite!", "Defend"] call BIS_fnc_taskSetType; //set the task type
 
-["LeadTrack01_F",0,1] call BIS_fnc_playMusic;//Play some music that lasts a while
+/*["LeadTrack01_F",0,1] call BIS_fnc_playMusic;//Play some music that lasts a while
 titleText ["<t color='#ff0000' size='2'>Defend the satellite!</t>", "PLAIN DOWN", 1, true, true];  //Display a hint in the middle of screen (https://community.bistudio.com/wiki/titleText)
-
-
-["LeadTrack01_F",0,1] call BIS_fnc_playMusic;//Play some music that lasts a while
-
 
 for "_i" from 1 to 20 do {
   private _group = createGroup east; 
@@ -44,9 +39,8 @@ for "_i" from 1 to 20 do {
   _group addWaypoint [getPos _term, 20]; //ADD A WAYPOINT
   sleep .01
 };
+sleep 30;*/
 [_term,2] call bis_fnc_dataTerminalAnimate; //keyframe 2
-sleep 30;
-
 
 _boxNumber = _boxNumber + 1;
 

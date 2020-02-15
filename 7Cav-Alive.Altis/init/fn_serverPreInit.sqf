@@ -24,4 +24,3 @@ private _endMission = [BLUFOR, "Deactivate the Specops headquarters!" Term4, ["D
 ["Deactivate the Specops headquarters!", "Attack"] call BIS_fnc_taskSetType;
 
 [] execVM "scripts\server\curator.sqf";
-[] execVM "scripts\server\baseCleanup.sqf"; 

@@ -414,7 +414,7 @@ class CfgOrbat
 		commander = "Visili"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
 		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
 		tags[] = {OPF_air}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
-		text = "text"; // Custom text and short text, can still use some arguments when defined:
+		text = "Russian Air Commander"; // Custom text and short text, can still use some arguments when defined:
 		textShort = "Russian %4 %3";
 		description= "Armed forces of the Russian Federation"; // A brief description of the group or unit.
 		assets[] = {};
@@ -429,7 +429,7 @@ class CfgOrbat
 		commander = "Ivanov"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
 		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
 		tags[] = {OPF_armor}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
-		text = "text"; // Custom text and short text, can still use some arguments when defined:
+		text = "ARmored Corps Commander"; // Custom text and short text, can still use some arguments when defined:
 		textShort = "Russian %4 %3 ";
 		description= "Armed forces of the Russian Federation"; // A brief description of the group or unit.
 		assets[] = {};
@@ -444,7 +444,7 @@ class CfgOrbat
 		commander = "Alexei"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
 		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
 		tags[] = {OPF_mech}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
-		text = "text"; // Custom text and short text, can still use some arguments when defined:
+		text = "Mechanized Infantry Commander"; // Custom text and short text, can still use some arguments when defined:
 		textShort = "Russian %4 %3 ";
 		description= "Armed forces of the Russian Federation"; // A brief description of the group or unit.
 		assets[] = {};
@@ -459,7 +459,7 @@ class CfgOrbat
 		commander = "Anatolii"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
 		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
 		tags[] = {OPF_specop}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
-		text = "text"; // Custom text and short text, can still use some arguments when defined:
+		text = "Special Potato Farmers"; // Custom text and short text, can still use some arguments when defined:
 		textShort = "Russian %4 %3 ";
 		description= "Russian Potato Farmers Turned Special Forces!"; // A brief description of the group or unit.
 		assets[] = {};

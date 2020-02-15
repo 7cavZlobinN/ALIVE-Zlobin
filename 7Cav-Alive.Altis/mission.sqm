@@ -74097,7 +74097,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this addAction [""<t color='#ff0000'>Deactivate the Strongpoint!</t>"", ""scripts\missionEnd\missionEnd_air.sqf""];}";
+						init="call{this addAction [""<t color='#ff0000'>Deactivate the Strongpoint!</t>"", ""scripts\missionEnd\missionEnd_StrongPoint.sqf""];}";
 						name="Term1";
 					};
 					id=14344;
@@ -74139,7 +74139,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this addAction [""<t color='#ff0000'>Deactivate the Strongpoint!</t>"", ""scripts\missionEnd\missionEnd_armor.sqf""];}";
+						init="call{this addAction [""<t color='#ff0000'>Deactivate the Strongpoint!</t>"", ""scripts\missionEnd\missionEnd_StrongPoint.sqf""];}";
 						name="Term2";
 					};
 					id=14388;
@@ -74180,7 +74180,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="call{this addAction [""<t color='#ff0000'>Deactivate the Strongpoint!</t>"", ""scripts\missionEnd\missionEnd_mech.sqf""];}";
+						init="call{this addAction [""<t color='#ff0000'>Deactivate the Strongpoint!</t>"", ""scripts\missionEnd\missionEnd_StrongPoint.sqf""];}";
 						name="Term3";
 					};
 					id=14130;
@@ -74222,7 +74222,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this addAction [""<t color='#ff0000'>Deactivate the Strongpoint!</t>"", ""scripts\missionEnd\missionEnd_specop.sqf""];}";
+						init="call{this addAction [""<t color='#ff0000'>Deactivate the Strongpoint!</t>"", ""scripts\missionEnd\missionEnd_StrongPoint.sqf""];}";
 						name="Term4";
 					};
 					id=14323;

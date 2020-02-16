@@ -14,24 +14,22 @@ params ["_target", "_caller", "_actionId", "_arguments"];
 
 //Set the local variable equal to the global variable
 private _boxNumber = missionNameSpace getVariable "endMissionNumber";
-
-//log which box was activated
-diag_log formatText["%1 has been activated!", _target];
+private _term = str _target;
 
 //Increase the local variable by 1
 _boxNumber = _boxNumber + 1;
  
 //Remove all the actions on the box
-removeAllActions _target;
+removeAllActions _term;
 
 //Animate the box to keyframe 3
-[_target,3] call BIS_fnc_DataTerminalAnimate;
+[_term,3] call BIS_fnc_DataTerminalAnimate;
 
 //Succeed the task 
 ["Defend The Satellite!", "SUCCEEDED"] call BIS_fnc_taskSetState;
 
 //Orbat : Switch statement for the different boxes
-switch (_target) do {
+switch (_term) do {
   case "Term1": {[ missionConfigFile >> "CfgORBAT" >> "air" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay};
   case "Term2": {[ missionConfigFile >> "CfgORBAT" >> "armor" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay};
   case "Term3": {[ missionConfigFile >> "CfgORBAT" >> "mech" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay};

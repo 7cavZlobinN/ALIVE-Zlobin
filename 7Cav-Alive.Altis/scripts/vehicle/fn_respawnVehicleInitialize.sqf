@@ -44,3 +44,12 @@ if (!isNil "_vehicleInit") then
 };
 
 [_vehicle] spawn JB_RV_Monitor;
+
+// No firing on base
+_vehicle addEventHandler ["Fired", {
+	if ((getPos (_this select 0)) inArea headquarters)  then	
+	{
+		deleteVehicle (_this select 6);
+		titleText ["Firing weapons and placing / throwing explosives at base is STRICTLY PROHIBITED!", "PLAIN", 3];
+	};
+}];

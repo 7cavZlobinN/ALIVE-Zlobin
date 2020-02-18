@@ -20,10 +20,10 @@ private _term = str _target;
 _boxNumber = _boxNumber + 1;
  
 //Remove all the actions on the box
-removeAllActions _term;
+removeAllActions _target;
 
 //Animate the box to keyframe 3
-[_term,3] call BIS_fnc_DataTerminalAnimate;
+[_target,3] call BIS_fnc_DataTerminalAnimate;
 
 //Succeed the task 
 ["Defend The Satellite!", "SUCCEEDED"] call BIS_fnc_taskSetState;
